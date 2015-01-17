@@ -1,0 +1,34 @@
+[core]
+    user = Keryn Knight
+    email = keryn@kerynknight.com
+[user]
+    name = Keryn Knight
+    email = keryn@kerynknight.com
+
+[alias]
+    purr = "pull --rebase"
+    co = checkout
+    rollback = reset --hard
+    undo = reset --hard
+    unadd = reset HEAD
+    tidy = !"git fsck --full --strict; git gc --aggressive;"
+    g = grep --break --heading --line-number
+    yesterday = "!git log --since=\"yesterday\" --author `git config user.email`"
+    lastweek = "!git log --since=\"1 week ago\" --author `git config user.email`"
+    peek = diff-tree --no-commit-id --name-only -r
+    recentbranches = !"git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'"
+
+[diff]
+    algorithm = patience
+
+[core]
+    excludesfile = /Users/kez/.gitignore_global
+    trustctime = false
+    commentchar = $
+
+[help]
+    autocorrect = 1
+[branch]
+    autosetuprebase = always
+[grep]
+    lineNumber = true
