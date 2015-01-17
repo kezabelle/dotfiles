@@ -1,0 +1,10 @@
+set visible-stats on
+set expand-tilde on
+set completion-ignore-case on
+set mark-directories on
+set show-all-if-ambiguous on
+set editing-mode vi
+set keymap vi
+set enable-meta-key off
+"\ep": history-search-backward
+"\en": history-search-forward
