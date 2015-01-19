@@ -18,3 +18,5 @@ Music
 Pictures
 Public
 Virtualenvs
+.ssh/
+.vim/.netrwhist
