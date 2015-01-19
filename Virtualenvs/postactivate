@@ -1,3 +1,12 @@
 #!/bin/bash
-# This hook is sourced after every virtualenv is activated.
+# This hook is run after every virtualenv is activated.
 
+export OLD_PATH=`pwd`
+
+builtin cd $VIRTUAL_ENV
+[ -e "Implementation" ] && builtin cd Implementation
+[ -e "Webapp" ] && builtin cd Webapp
+[ -e "webapp" ] && builtin cd webapp
+[ -e "project" ] && builtin cd project
+clear;
+ls -alFhG;
