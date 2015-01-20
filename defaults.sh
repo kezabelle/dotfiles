@@ -11,11 +11,15 @@ pip3 install pip --upgrade
 pip3 install setuptools --upgrade
 brew install pypy
 brew install go
-brew update
+brew install dos2unix
+brew install ffmpeg
+brew install ssh-copy-id
 brew install git
+brew install git-extras
 brew install vim
+brew update
 pip install virtualenvwrapper
-# most of this comes from 
+# most of this comes from
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
