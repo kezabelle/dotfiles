@@ -9,7 +9,7 @@ export HISTTIMEFORMAT='%F %T '
 
 # http://www.aloop.org/2012/01/19/flush-commands-to-bash-history-immediately/
 export PROMPT_COMMAND='history -a'
-export PIP_DOWNLOAD_CACHE=~/Dropbox/dotfiles/pip/cache
+# export PIP_DOWNLOAD_CACHE=~/Dropbox/dotfiles/pip/cache
 
 # colored grep
 export GREP_OPTIONS='--color=auto'
