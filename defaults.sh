@@ -17,6 +17,8 @@ brew install ssh-copy-id
 brew install git
 brew install git-extras
 brew install vim
+# these are for Pillow
+brew install libtiff libjpeg webp little-cms2 libpng
 brew update
 pip install virtualenvwrapper
 # most of this comes from
@@ -108,5 +110,6 @@ defaults write com.google.Chrome DisablePrintPreview -bool true
 defaults write com.google.Chrome.canary DisablePrintPreview -bool true
 launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
-
+sudo cp /etc/hosts /etc/hosts.original
+echo '127.0.0.1 kez' | sudo tee -a /etc/hosts > /dev/null
 echo 'http://rottmann.net/2013/03/launch-iterm-2-on-startup-without-opening-a-terminal-window/'
