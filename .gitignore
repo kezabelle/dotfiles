@@ -20,3 +20,4 @@ Public
 Virtualenvs
 .ssh/
 .vim/.netrwhist
+.subversion/
