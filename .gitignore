@@ -21,3 +21,4 @@ Virtualenvs
 .ssh/
 .vim/.netrwhist
 .subversion/
+.wingide5
