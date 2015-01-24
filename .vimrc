@@ -2,8 +2,8 @@
 " see http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html
 filetype on
 filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" call pathogen#runtime_append_all_bundles()
+" call pathogen#helptags()
 
 " basic setup
 if has("gui_running")
