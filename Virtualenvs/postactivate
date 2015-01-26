@@ -10,3 +10,4 @@ builtin cd $VIRTUAL_ENV
 [ -e "project" ] && builtin cd project
 clear;
 ls -alFhG;
+find . -not \( -path include -prune \) -not \( -path local -prune \) -not \( -path lib -prune \) -not \( -path bin -prune \) -type f -name "*requirements*.txt" -print
