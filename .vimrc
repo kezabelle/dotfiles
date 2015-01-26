@@ -64,6 +64,9 @@ set autoread
 " do lots of scanning on tab completion
 set complete=.,w,b,u,U,t,i,d
 
+" fix my sodding backspace pls
+set backspace=indent,eol,start
+
 " we have a fast terminal
 set ttyfast
 
