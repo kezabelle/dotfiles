@@ -1,0 +1,17 @@
+set ruler
+set showcmd
+set cmdheight=1
+set laststatus=2
+set cursorline
+set wildmode=list:longest,full
+set wildmenu
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,*.pyo,*.pyc
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+set wildignore+=*.swp,*~,._*
+set showmode
+nnoremap <space> za
+vnoremap < <gv
+vnoremap > >gv
+imap kj <C-[>
+imap jk <C-[>
+
