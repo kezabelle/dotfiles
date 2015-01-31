@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inspections version="1.0" is_locked="false">
+  <option name="myName" value="Default (fixed)" />
+  <option name="myLocal" value="false" />
+  <inspection_tool class="DjangoUnresolvedUrlInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+  <inspection_tool class="DuplicatedBlockNamesInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="ExtendsTagPositionInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PyAssignmentToLoopOrWithParameterInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PyAttributeOutsideInitInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PyClassicStyleClassInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PyComparisonWithNoneInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PyCompatibilityInspection" enabled="false" level="WARNING" enabled_by_default="false">
+    <option name="ourVersions">
+      <value>
+        <list size="1">
+          <item index="0" class="java.lang.String" itemvalue="3.4" />
+        </list>
+      </value>
+    </option>
+  </inspection_tool>
+  <inspection_tool class="PyDefaultArgumentInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PyExceptClausesOrderInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PyFromFutureImportInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PyInconsistentIndentationInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PyMandatoryEncodingInspection" enabled="true" level="WARNING" enabled_by_default="true">
+    <option name="myEncodingFormatIndex" value="1" />
+  </inspection_tool>
+  <inspection_tool class="PyNonAsciiCharInspection" enabled="true" level="WARNING" enabled_by_default="true">
+    <option name="myEncodingFormatIndex" value="1" />
+  </inspection_tool>
+  <inspection_tool class="PyPep8Inspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PyPep8NamingInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PyReturnFromInitInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="PySetFunctionToLiteralInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+  <inspection_tool class="PyStringFormatInspection" enabled="true" level="ERROR" enabled_by_default="true" />
+</inspections>
+
