@@ -22,3 +22,12 @@ Virtualenvs
 .vim/.netrwhist
 .subversion/
 .wingide5
+.PyCharmConfig/eval/
+.PyCharmConfig/fileTemplates/internal/Python Unit Test.py
+.PyCharmConfig/inspection/Default.xml
+.PyCharmConfig/componentVersions/
+.PyCharmConfig/quicklists/
+.PyCharmConfig/tasks/
+.PyCharmConfig/port
+.PyCharm40/
+
