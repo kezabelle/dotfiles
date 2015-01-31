@@ -1,0 +1,14 @@
+<application>
+  <component name="UISettings">
+    <option name="ANIMATE_WINDOWS" value="false" />
+    <option name="HIDE_TOOL_STRIPES" value="false" />
+    <option name="SHOW_MEMORY_INDICATOR" value="true" />
+    <option name="SCROLL_TAB_LAYOUT_IN_EDITOR" value="false" />
+    <option name="SHOW_CLOSE_BUTTON" value="false" />
+    <option name="HIDE_KNOWN_EXTENSION_IN_TABS" value="true" />
+    <option name="SHOW_ICONS_IN_QUICK_NAVIGATION" value="false" />
+    <option name="ACTIVATE_MRU_EDITOR_ON_CLOSE" value="true" />
+    <option name="SHOW_ICONS_IN_MENUS" value="false" />
+    <option name="MARK_MODIFIED_TABS_WITH_ASTERISK" value="true" />
+  </component>
+</application>
