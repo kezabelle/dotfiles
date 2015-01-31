@@ -12,6 +12,6 @@ set showmode
 nnoremap <space> za
 vnoremap < <gv
 vnoremap > >gv
-imap kj <C-[>
-imap jk <C-[>
+" imap kj <C-[>
+" imap jk <C-[>
 
