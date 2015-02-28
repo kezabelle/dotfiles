@@ -5,3 +5,5 @@
 *.orig
 *.egg-info
 *.egg
+htmlcov
+.coverage
