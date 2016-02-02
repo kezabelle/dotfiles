@@ -3,24 +3,20 @@ ln -s ~/Dropbox/passlist.kdb "Passwords"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
 brew install sqlite
-brew install python
-pip install setuptools --upgrade
-pip install pip --upgrade
-brew install python3
-pip3 install pip --upgrade
-pip3 install setuptools --upgrade
-brew install pypy
+brew install python python3 pypy
+pip install pip setuptools --upgrade
+pip3 install pip setuptools --upgrade
+pip_pypy install pip setuptools --upgrade
 brew install go
 brew install dos2unix
 brew install ffmpeg
 brew install ssh-copy-id
-brew install git
-brew install git-extras
+brew install git git-extras
 brew install vim
 # these are for Pillow
 brew install libtiff libjpeg webp little-cms2 libpng
-brew update
-pip install virtualenvwrapper
+brew cask install launchrocket
+pip3 install virtualenvwrapper
 # most of this comes from
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.00001
