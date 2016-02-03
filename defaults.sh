@@ -2,7 +2,7 @@ cd ~/Desktop/
 ln -s ~/Dropbox/passlist.kdb "Passwords"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
-brew install sqlite
+brew install sqlite postgres mysql
 brew install python python3 pypy
 pip install pip setuptools --upgrade
 pip3 install pip setuptools --upgrade
@@ -15,7 +15,7 @@ brew install git git-extras
 brew install vim
 # these are for Pillow
 brew install libtiff libjpeg webp little-cms2 libpng
-brew cask install launchrocket appcleaner firefox
+brew cask install adium appcleaner cakebrew diffmerge dropbox firefox gas-mask google-chrome hex-fiend imageoptim keepassx karabiner launchrocket libreoffice licecap little-snitch liteide omnidisksweeper sequel-pro spotify virtualbox vagrant vagrant-manager vlc
 pip3 install virtualenvwrapper
 # most of this comes from
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
