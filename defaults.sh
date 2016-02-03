@@ -15,7 +15,7 @@ brew install git git-extras
 brew install vim
 # these are for Pillow
 brew install libtiff libjpeg webp little-cms2 libpng
-brew cask install launchrocket
+brew cask install launchrocket appcleaner firefox
 pip3 install virtualenvwrapper
 # most of this comes from
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
