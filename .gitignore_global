@@ -7,3 +7,12 @@
 *.egg
 htmlcov
 .coverage
+.idea
+.Python
+bin
+include
+lib
+bash_history.txt
+pip-selfcheck.json
+.cache
+.python-eggs
