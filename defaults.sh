@@ -110,3 +110,4 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/nul
 sudo cp /etc/hosts /etc/hosts.original
 echo '127.0.0.1 kez' | sudo tee -a /etc/hosts > /dev/null
 echo 'http://rottmann.net/2013/03/launch-iterm-2-on-startup-without-opening-a-terminal-window/'
+echo 'https://ohthehugemanatee.org/blog/2015/10/01/how-i-got-el-capitain-working-with-my-developer-tools/'
