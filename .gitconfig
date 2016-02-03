@@ -22,7 +22,7 @@
     algorithm = patience
 
 [core]
-    excludesfile = /Users/kez/.gitignore_global
+	excludesfile = /Users/kez/.gitignore_global
     trustctime = false
     commentchar = $
 
