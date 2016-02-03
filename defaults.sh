@@ -2,7 +2,7 @@ cd ~/Desktop/
 ln -s ~/Dropbox/passlist.kdb "Passwords"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
-brew install sqlite postgres mysql
+brew install sqlite postgres mysql redis
 brew install python python3 pypy
 pip install pip setuptools --upgrade
 pip3 install pip setuptools --upgrade
