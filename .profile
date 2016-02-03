@@ -1,6 +1,6 @@
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 #export PATH="$PATH:/usr/local/share/npm/bin"
-
+export PATH="/usr/local/bin:$PATH"
 # ignore duplicates in history
 export HISTIGNORE="&:ls:[bf]g:exit"
 export HISTCONTROL=ignoreboth
@@ -8,8 +8,7 @@ export HISTFILESIZE=10000
 export HISTTIMEFORMAT='%F %T '
 
 # http://www.aloop.org/2012/01/19/flush-commands-to-bash-history-immediately/
-export PROMPT_COMMAND='history -a $(PWD)/bash_history.txt'
-# export PIP_DOWNLOAD_CACHE=~/Dropbox/dotfiles/pip/cache
+export PROMPT_COMMAND='history -a'
 
 # colored grep
 export GREP_OPTIONS='--color=auto'
@@ -31,28 +30,18 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     source $(brew --prefix)/etc/bash_completion
 fi
 
-alias l='ls'
-alias ll='ls -alPGkpW'
-alias lsl='ls -halF'
-alias lsx='ls | grep [w-]x[r-]'
 alias symlinks='find . type l exec ls {} \;'
 alias readonlys='find -L . ! -perm -u+wr -exec ls -al {} \;'
 alias executables='find -L . ! -perm +111 -exec ls -al {} \;'
 alias dropbox_conflicts='find . | grep "conflicted"'
 alias rmpyc="find . -name '*.pyc' -exec rm {} \;"
 
-alias testnet='wget -O /dev/null http://cachefly.cachefly.net/100mb.test'
-alias pyccohere='find * -name "*.py" -print0 | xargs -0 pycco --path'
 alias ssh-keys='ssh-add -l'
-alias mirror='wget -mk -e robots=off -w 1'
-alias up2date='brew update && brew upgrade && brew cleanup'
 alias http!='python -m SimpleHTTPServer 8080'
 alias smtp!='python -m smtpd -n -c DebuggingServer localhost:1025'
 alias backup='tar -zcvf'
 alias untar='tar -zxvf'
 alias flushdns='dscacheutil -flushcache'
-
-alias elasticlaunch="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
 
 function __gitdir {
 	if [ -z "${1-}" ]; then
