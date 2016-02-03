@@ -15,7 +15,7 @@ brew install git git-extras
 brew install vim
 # these are for Pillow
 brew install libtiff libjpeg webp little-cms2 libpng
-brew cask install adium appcleaner cakebrew diffmerge dropbox firefox gas-mask google-chrome hex-fiend imageoptim keepassx karabiner launchrocket libreoffice licecap little-snitch liteide omnidisksweeper sequel-pro spotify virtualbox vagrant vagrant-manager vlc
+brew cask install acorn adium appcleaner avast cakebrew diffmerge dropbox firefox gas-mask google-chrome hex-fiend imageoptim keepassx karabiner launchrocket libreoffice licecap little-snitch liteide omnidisksweeper sequel-pro spotify virtualbox vagrant vagrant-manager vlc
 pip3 install virtualenvwrapper
 # most of this comes from
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
