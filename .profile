@@ -8,7 +8,27 @@ export HISTFILESIZE=10000
 export HISTTIMEFORMAT='%F %T '
 
 # http://www.aloop.org/2012/01/19/flush-commands-to-bash-history-immediately/
-export PROMPT_COMMAND='history -a'
+# http://eli.thegreenplace.net/2013/06/11/keeping-persistent-history-in-bash
+log_bash_persistent_history()
+{
+  [[
+    $(history 1) =~ ^\ *[0-9]+\ +([^\ ]+\ [^\ ]+)\ +(.*)$
+  ]]
+  local date_part="${BASH_REMATCH[1]}"
+  local command_part="${BASH_REMATCH[2]}"
+  if [ "$command_part" != "$PERSISTENT_HISTORY_LAST" ]
+  then
+    echo $date_part "|" "$command_part" >> ~/Dropbox/.persistent_history
+    export PERSISTENT_HISTORY_LAST="$command_part"
+  fi
+}
+
+# Stuff to do on PROMPT_COMMAND
+run_on_prompt_command()
+{
+    log_bash_persistent_history
+}
+export PROMPT_COMMAND='run_on_prompt_command'
 
 # colored grep
 export GREP_OPTIONS='--color=auto'
