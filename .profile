@@ -128,3 +128,7 @@ export -f py
 function cd {
     builtin cd "$@" && ls -F
 }
+
+function rm {
+    echo "Use `trash` or `rmtrash` instead"
+}
