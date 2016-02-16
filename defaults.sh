@@ -13,6 +13,7 @@ brew install ffmpeg
 brew install ssh-copy-id
 brew install git git-extras
 brew install vim
+brew install trash rmtrash
 # these are for Pillow
 brew install libtiff libjpeg webp little-cms2 libpng
 brew cask install acorn adium appcleaner avast cakebrew diffmerge dropbox firefox gas-mask google-chrome hex-fiend imageoptim keepassx karabiner launchrocket libreoffice licecap little-snitch liteide omnidisksweeper sequel-pro spotify virtualbox vagrant vagrant-manager vlc
