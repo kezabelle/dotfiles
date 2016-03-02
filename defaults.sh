@@ -9,7 +9,7 @@ pip3 install pip setuptools --upgrade
 pip_pypy install pip setuptools --upgrade
 brew install go
 brew install dos2unix
-brew install ffmpeg
+brew install ffmpeg --with-faac --with-fdk-aac --with-fontconfig --with-freetype --with-frei0r --with-libass --with-libbluray --with-libcaca --with-libquvi --with-libsoxr --with-libvidstab --with-libvorbis --with-libvpx --with-opencore-amr --with-openjpeg --with-openssl -with-opus --with-rtmpdump --with-schroedinger --with-speex --with-theora --with-tools --with-x265
 brew install ssh-copy-id
 brew install git git-extras
 brew install vim
