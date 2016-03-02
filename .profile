@@ -41,10 +41,9 @@ export LSCOLORS='Gxfxcxdxdxegedabagacad'
 export PS1="\[$(tput setaf 3)\]> \[$(tput sgr0)\]\t \[$(tput setaf 6)\]\u\[$(tput sgr0)\]@\[$(tput setaf 6)\]\h \[$(tput setaf 3)\]\[\$(parse_git_branch)\] \[$(tput setaf 6)\]\w\n\[$(tput setaf 3)\]>\[$(tput sgr0)\] "
 
 # This gets us the virtualenvwrapper commands
-export WORKON_HOME="$HOME/Virtualenvs"
-if [ -z "$VIRTUALENVWRAPPER_PYTHON" ]; then
-    source virtualenvwrapper_lazy.sh
-fi
+#if [ -z "$VIRTUALENVWRAPPER_PYTHON" ]; then
+#    source virtualenvwrapper_lazy.sh
+#fi
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     source $(brew --prefix)/etc/bash_completion
@@ -141,3 +140,36 @@ function cd {
 function rm {
     echo "Use `trash` or `rmtrash` instead"
 }
+
+if which direnv > /dev/null; then eval "$(direnv hook bash)"; fi
+if which pyenv > /dev/null
+    then eval "$(pyenv init -)";
+fi
+if which pyenv-virtualenv-init > /dev/null
+    then eval "$(pyenv virtualenv-init -)";
+fi
+if which pyenv-virtualenvwrapper > /dev/null
+then
+    export WORKON_HOME="$HOME/Virtualenvs"
+    export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+    pyenv virtualenvwrapper;
+fi
+
+
+function kdeactivate {
+    pyenv deactivate;
+}
+
+function kmkvirtualenv {
+    local first="$1";
+    shift;
+    pyenv virtualenv "$first" "$@";
+}
+
+function kworkon {
+    local first="$1";
+    shift;
+    pyenv activate "$first" "$@" && cd "$WORKON_HOME/$first";
+
+}
+
