@@ -31,3 +31,5 @@ Virtualenvs
 .PyCharmConfig/port
 .PyCharm40/
 
+.pyenv
+.vagrant.d
