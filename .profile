@@ -129,6 +129,9 @@ function py {
             shift;
             python -b -tt manage.py "$@"
             ;;
+        *)
+            python "$@"
+            ;;
     esac
 }
 export -f py
