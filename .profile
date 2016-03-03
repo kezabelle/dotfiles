@@ -164,15 +164,20 @@ function kdeactivate {
 }
 
 function kmkvirtualenv {
-    local first="$1";
-    shift;
-    pyenv virtualenv "$first" "$@";
+    pyenv virtualenv "$1";
+    mkdir "$WORKON_HOME/$1";
+    kworkon $1;
+    if [ -f "$WORKON_HOME/postmkvirtualenv" ]; then
+        echo "$WORKON_HOME/postmkvirtualenv"
+    fi
 }
 
 function kworkon {
-    local first="$1";
-    shift;
-    pyenv activate "$first" "$@" && cd "$WORKON_HOME/$first";
+    cd "$WORKON_HOME/$1";
+    pyenv activate "$1";
+    if [ -f "$WORKON_HOME/postactivate" ]; then
+        echo "$WORKON_HOME/postactivate"
+    fi
 
 }
 
