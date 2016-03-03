@@ -28,7 +28,7 @@ run_on_prompt_command()
 {
     log_bash_persistent_history
 }
-export PROMPT_COMMAND='run_on_prompt_command'
+export PROMPT_COMMAND='run_on_prompt_command; history -a'
 
 # colored grep
 export GREP_OPTIONS='--color=auto'
