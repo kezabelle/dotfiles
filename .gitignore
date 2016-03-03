@@ -33,3 +33,6 @@ Virtualenvs
 
 .pyenv
 .vagrant.d
+.matplotlib
+dump.rdb
+.my.cnf
