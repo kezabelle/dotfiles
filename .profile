@@ -138,7 +138,7 @@ function cd {
 }
 
 function rm {
-    echo "Use `trash` or `rmtrash` instead"
+    echo "Use 'trash' or 'rmtrash' instead"
 }
 
 if which direnv > /dev/null; then eval "$(direnv hook bash)"; fi
