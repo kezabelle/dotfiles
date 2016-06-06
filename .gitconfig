@@ -42,3 +42,5 @@
 	trustExitCode = true
 [mergetool]
 	keepBackup = true
+[status]
+	submoduleSummary = true
