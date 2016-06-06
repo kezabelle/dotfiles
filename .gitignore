@@ -36,3 +36,26 @@ Virtualenvs
 .matplotlib
 dump.rdb
 .my.cnf
+.hgignore_global
+.lesshst
+.node_repl_history
+.psql_history
+.spacemacs
+.trepan_hist
+.wget-hsts
+.cups
+.gradle
+.ievms
+.npm
+VirtualBox VMs
+restarter
+.mix
+README
+.ipython/profile_default/history.sqlite
+.node-gyp
+.config/copyq
+.config/configstore
+.config/direnv/allow
+go
+.oracle_jre_usage
+.config/htop
