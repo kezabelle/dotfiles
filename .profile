@@ -158,26 +158,6 @@ then
     pyenv virtualenvwrapper;
 fi
 
-
-function kdeactivate {
-    pyenv deactivate;
-}
-
-function kmkvirtualenv {
-    pyenv virtualenv "$1";
-    mkdir "$WORKON_HOME/$1";
-    kworkon $1;
-    if [ -f "$WORKON_HOME/postmkvirtualenv" ]; then
-        echo "$WORKON_HOME/postmkvirtualenv"
-    fi
-}
-
-function kworkon {
-    cd "$WORKON_HOME/$1";
-    pyenv activate "$1";
-    if [ -f "$WORKON_HOME/postactivate" ]; then
-        echo "$WORKON_HOME/postactivate"
-    fi
-
-}
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
