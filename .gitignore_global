@@ -16,3 +16,5 @@ bash_history.txt
 pip-selfcheck.json
 .cache
 .python-eggs
+.vscode/extensions
+.dbeaver
